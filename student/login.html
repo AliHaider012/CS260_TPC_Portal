@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Placement Management System - Student Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <header>
+        <img src="IITP.png" width="75px" draggable="false" >
+        <h3 style="margin:-55px 100px">Training & Placement Cell IITP</h3>
+        <h1 style="margin:120px 160px"></h1>
+    </header>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="signup.php" method="post">
+                <h1>Create Account</h1><br>
+                <input type="text" placeholder="Name" name="name"/>
+                <input type="text" placeholder="Roll No" name="roll_no"/>
+                <input type="email" placeholder="Email" name="email"/>
+                <input type="password" placeholder="Password" name="password"/>
+                <button>Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="login.php" method="post">
+                <h1>Student Sign in</h1><br>
+                <input type="email" placeholder="Email" name="email"/>
+                <input type="password" placeholder="Password" name="password"/><br>
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Hello!</h1>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="ghost" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Address:
+            Training and Placement Cell,
+            IIT Patna, Bihta Campus,
+            Bihta Kanpa Road, Bihta,
+            Bihar Pin - 801106, India.
+        </p>
+    </footer>
+    <script type="text/javascript" src="login.js"></script>
+</body>
+
+</html>
